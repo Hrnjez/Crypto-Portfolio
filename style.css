@@ -1,0 +1,82 @@
+body {
+    background: #202020;
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, rgb(34, 37, 49) , rgba(34, 37, 49, 0) );
+}
+
+.container .title {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+
+.container .content {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+    color: #fff;
+}
+
+.container .content img {
+    border-radius: 100%;
+    outline:rgb(34, 36, 44) solid 3px;
+    outline-offset: -2px;
+    max-width: 100%;
+    width: 50px;
+    
+}
+
+.content .coin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.25rem 1rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eee2;
+}
+
+.content .coin:first-child {
+    border-top: 1px solid #eee2;
+}
+
+.content .price-change {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.legend {
+    display: none;
+}
+
+.legend ul {
+    display: grid;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: start;
+}
+
+.legend ul li {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: #575d6d;
+}
+
+.price {
+    transition: 300ms;
+}
+
+@media screen and (min-width: 768px) {
+    .content .coin {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .legend {
+        display: block;
+    }
+}
